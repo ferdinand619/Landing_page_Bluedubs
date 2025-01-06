@@ -1,3 +1,170 @@
 <!DOCTYPE html>
-<p>My name is Sean</p>
-<h1>This project idea will be a success!</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluedubs</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #00BFFF);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 2s;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ffeb3b;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            animation: slideIn 2s;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .hero a {
+            display: inline-block;
+            padding: 10px 25px;
+            font-size: 1.2rem;
+            color: white;
+            background: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .hero a:hover {
+            background: #0056b3;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            margin: 0 15px;
+            padding: 15px 30px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .buttons a:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #333;
+            color: white;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #00BFFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bluedubs</h1>
+        <nav>
+            <a href="#part-time-jobs">Part-Time Jobs</a>
+            <a href="#accommodation">Accommodation</a>
+            <a href="#about-us">About Us</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h2>Welcome to Bluedubs</h2>
+            <p>Your trusted platform for jobs, accommodation, and more.</p>
+            <a href="#about-us">Learn More</a>
+        </div>
+    </div>
+
+    <section class="buttons">
+        <a href="#part-time-jobs">Part-Time Jobs</a>
+        <a href="#accommodation">Accommodation</a>
+        <a href="#about-us">About Us</a>
+    </section>
+
+    <footer>
+        <p>Contact Us:</p>
+        <p>Email: <a href="mailto:contact@bluedubs.com">contact@bluedubs.com</a></p>
+        <p>Address: 123 Blue Street, Dublin</p>
+        <p>Phone: +353-123-4567</p>
+    </footer>
+</body>
+</html>
