@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluedubs - Accommodation</title> 
+    <style>
+        /* Your existing CSS styles here */
+
+        /* Accommodation section styles */
+        #accommodation {
+            padding: 50px 0;
+        }
+
+        #accommodation h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .accommodation-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .accommodation {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .accommodation img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive adjustments (optional) */
+        @media screen and (max-width: 768px) {
+            .accommodation-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header> 
+        </header>
+
+    <div class="hero">
+        </div>
+
+    <section class="buttons">
+        </section>
+
+    <section id="accommodation">
+        <h2>Find Your Perfect Stay</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by location...">
+            <button>Search</button>
+        </div>
+
+        <div class="accommodation-list">
+            <div class="accommodation">
+                <img src="images/accommodation1.jpg" alt="Accommodation 1"> 
+                <h3>Cozy Apartment</h3>
+                <p>Description of accommodation 1</p>
+                <p>Price: €50/night</p>
+                <a href="accommodation-details1.html">View Details</a>
+            </div>
+
+            <div class="accommodation"> 
+                <img src="images/accommodation2.jpg" alt="Accommodation 2">
+                <h3>Modern Studio</h3>
+                <p>Description of accommodation 2</p>
+                <p>Price: €40/night</p>
+                <a href="accommodation-details2.html">View Details</a>
+            </div>
+
+            </div> 
+        </div>
+    </section>
+
+    <footer> 
+        </footer>
+
+</body>
+</html>
